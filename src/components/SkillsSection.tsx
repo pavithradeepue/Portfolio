@@ -16,11 +16,11 @@ const skillIconMap: Record<string, React.ReactNode> = {
   PHP: <SiPhp className="w-3.5 h-3.5" />,
   JavaScript: <SiJavascript className="w-3.5 h-3.5" />,
   HTML: <SiHtml5 className="w-3.5 h-3.5" />,
-  CSS: <SiCss3 className="w-3.5 h-3.5" />,
+  CSS: <SiCss className="w-3.5 h-3.5" />,
   React: <SiReact className="w-3.5 h-3.5" />,
   Flutter: <SiFlutter className="w-3.5 h-3.5" />,
   FastAPI: <SiFastapi className="w-3.5 h-3.5" />,
-  Oracle: <SiOracle className="w-3.5 h-3.5" />,
+  Oracle: <FaDatabase className="w-3.5 h-3.5" />,
   MySQL: <SiMysql className="w-3.5 h-3.5" />,
   MongoDB: <SiMongodb className="w-3.5 h-3.5" />,
   "API Integration": <Globe className="w-3.5 h-3.5" />,
@@ -28,7 +28,7 @@ const skillIconMap: Record<string, React.ReactNode> = {
   "Web Scraping": <Globe className="w-3.5 h-3.5" />,
   Jupyter: <SiJupyter className="w-3.5 h-3.5" />,
   "Git/GitHub": <SiGit className="w-3.5 h-3.5" />,
-  "VS Code": <SiVisualstudiocode className="w-3.5 h-3.5" />,
+  "VS Code": <VscVscode className="w-3.5 h-3.5" />,
   PyCharm: <SiPycharm className="w-3.5 h-3.5" />,
 };
 
