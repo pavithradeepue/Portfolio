@@ -8,7 +8,6 @@ import {
 import { FaJava, FaC, FaDatabase } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 import { Brain, Globe, Wrench } from "lucide-react";
-import { Brain, Globe, Wrench } from "lucide-react";
 
 const skillIconMap: Record<string, React.ReactNode> = {
   Python: <SiPython className="w-3.5 h-3.5" />,
