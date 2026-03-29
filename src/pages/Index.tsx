@@ -6,6 +6,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import Footer from "@/components/Footer";
+import RevealOnScroll from "@/components/RevealOnScroll";
 import { useTheme } from "@/hooks/useTheme";
 
 const Index = () => {
@@ -15,12 +16,24 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <AchievementsSection />
-      <CertificationsSection />
-      <Footer />
+      <RevealOnScroll>
+        <AboutSection />
+      </RevealOnScroll>
+      <RevealOnScroll delay={80}>
+        <SkillsSection />
+      </RevealOnScroll>
+      <RevealOnScroll delay={80}>
+        <ProjectsSection />
+      </RevealOnScroll>
+      <RevealOnScroll delay={80}>
+        <AchievementsSection />
+      </RevealOnScroll>
+      <RevealOnScroll delay={80}>
+        <CertificationsSection />
+      </RevealOnScroll>
+      <RevealOnScroll delay={100}>
+        <Footer />
+      </RevealOnScroll>
     </div>
   );
 };
