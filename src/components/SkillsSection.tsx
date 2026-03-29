@@ -1,11 +1,13 @@
 import { portfolioData } from "@/data/portfolio";
 import { SectionHeader } from "./AboutSection";
 import {
-  SiPython, SiJavascript, SiPhp, SiHtml5, SiCss3, SiReact, SiFlutter,
-  SiFastapi, SiOracle, SiMysql, SiMongodb, SiJupyter, SiGit, SiGithub,
-  SiVisualstudiocode, SiPycharm
+  SiPython, SiJavascript, SiPhp, SiHtml5, SiCss, SiReact, SiFlutter,
+  SiFastapi, SiMysql, SiMongodb, SiJupyter, SiGit,
+  SiPycharm
 } from "react-icons/si";
-import { FaJava, FaC } from "react-icons/fa6";
+import { FaJava, FaC, FaDatabase } from "react-icons/fa6";
+import { VscVscode } from "react-icons/vsc";
+import { Brain, Globe, Wrench } from "lucide-react";
 import { Brain, Globe, Wrench } from "lucide-react";
 
 const skillIconMap: Record<string, React.ReactNode> = {
