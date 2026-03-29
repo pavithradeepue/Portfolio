@@ -23,7 +23,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
     <header className="sticky top-4 z-50 mx-auto max-w-5xl px-4">
       <nav className="glass-nav rounded-2xl px-5 py-3 flex items-center justify-between">
         <a href="#home" className="font-display text-lg font-extrabold gradient-text">
-          Pavithra.dev
+          Pavithra Deepu E
         </a>
 
         {/* Desktop */}
