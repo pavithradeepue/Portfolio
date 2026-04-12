@@ -55,4 +55,4 @@ Feel free to explore my full profile and reach out!
 
 - **Email**: pavithradeepuework@gmail.com
 - **LinkedIn**: [https://www.linkedin.com/in/pavithra-deepu-e/](https://www.linkedin.com/in/pavithra-deepu-e/)
-- **Live Site**: *(Add Netlify URL here once deployed)*
+- **Live Site**: (https://pavithradeepueportfolio.netlify.app/)
