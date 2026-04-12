@@ -5,7 +5,6 @@ const Footer = () => (
   <footer id="contact" className="container mx-auto max-w-5xl px-4 mt-20 mb-8">
     <div className="glass-card rounded-2xl p-8 text-center">
       <h2 className="font-display text-2xl font-extrabold gradient-text">Let's Connect</h2>
-      <p className="mt-2 text-muted-foreground">{portfolioData.basics.contact}</p>
       <div className="mt-6 flex justify-center gap-4">
         <a href={portfolioData.basics.linkedin} target="_blank" rel="noopener" className="px-5 py-2 rounded-full text-sm font-bold border border-border hover:bg-secondary transition-colors">
           LinkedIn

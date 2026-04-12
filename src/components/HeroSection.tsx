@@ -13,28 +13,24 @@ const HeroSection = () => {
 
       <div className="container mx-auto max-w-5xl px-4 pt-20 pb-12 text-center relative z-10">
         {/* Profile image */}
-        <div className="mx-auto mb-6 w-28 h-28 rounded-full overflow-hidden ring-4 ring-primary/30 shadow-lg animate-fade-up">
+        <div className="mx-auto mb-6 w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden ring-4 ring-primary/30 shadow-lg animate-fade-up">
           <img src={profileImg} alt={basics.name} className="w-full h-full object-cover" />
         </div>
 
-        <p className="text-xs font-extrabold uppercase tracking-[3px] text-primary mb-3 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          Portfolio 2026
-        </p>
-
-        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight animate-fade-up" style={{ animationDelay: "0.2s" }}>
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <span className="gradient-text">{basics.name}</span>
         </h1>
 
-        <p className="mt-3 text-lg sm:text-xl font-bold text-accent animate-fade-up" style={{ animationDelay: "0.3s" }}>
+        <p className="mt-3 text-lg sm:text-xl font-bold text-accent animate-fade-up" style={{ animationDelay: "0.2s" }}>
           {basics.role}
         </p>
 
-        <p className="mt-4 max-w-2xl mx-auto text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.4s" }}>
+        <p className="mt-4 max-w-2xl mx-auto text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.3s" }}>
           {basics.summary}
         </p>
 
         {/* CTAs */}
-        <div className="mt-8 flex flex-wrap justify-center gap-3 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+        <div className="mt-8 flex flex-wrap justify-center gap-3 animate-fade-up" style={{ animationDelay: "0.4s" }}>
           <a
             href="#projects"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -53,7 +49,7 @@ const HeroSection = () => {
         </div>
 
         {/* Social links */}
-        <div className="mt-6 flex justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.6s" }}>
+        <div className="mt-6 flex justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.5s" }}>
           <a href={basics.linkedin} target="_blank" rel="noopener" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="w-4 h-4" />
           </a>
@@ -66,7 +62,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-10 grid grid-cols-3 gap-4 max-w-md mx-auto animate-fade-up" style={{ animationDelay: "0.7s" }}>
+        <div className="mt-10 grid grid-cols-3 gap-4 max-w-md mx-auto animate-fade-up" style={{ animationDelay: "0.6s" }}>
           {stats.map((s) => (
             <div key={s.label} className="glass-card rounded-xl p-4 text-center">
               <div className="text-2xl font-display font-extrabold gradient-text">{s.value}</div>

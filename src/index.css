@@ -142,4 +142,12 @@
     backdrop-filter: blur(20px);
     border: 1px solid hsl(var(--border) / 0.5);
   }
+
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+
+  .hover-blink:hover {
+    animation: blinker 0.8s linear infinite;
+  }
 }

@@ -16,22 +16,22 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <HeroSection />
-      <RevealOnScroll>
+      <RevealOnScroll direction="up" delay={60}>
         <AboutSection />
       </RevealOnScroll>
-      <RevealOnScroll delay={80}>
+      <RevealOnScroll direction="left" delay={90}>
         <SkillsSection />
       </RevealOnScroll>
-      <RevealOnScroll delay={80}>
+      <RevealOnScroll direction="right" delay={90}>
         <ProjectsSection />
       </RevealOnScroll>
-      <RevealOnScroll delay={80}>
+      <RevealOnScroll direction="left" delay={90}>
         <AchievementsSection />
       </RevealOnScroll>
-      <RevealOnScroll delay={80}>
+      <RevealOnScroll direction="right" delay={90}>
         <CertificationsSection />
       </RevealOnScroll>
-      <RevealOnScroll delay={100}>
+      <RevealOnScroll direction="up" delay={120}>
         <Footer />
       </RevealOnScroll>
     </div>

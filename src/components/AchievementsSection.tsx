@@ -1,9 +1,37 @@
 import { portfolioData } from "@/data/portfolio";
 import { SectionHeader } from "./AboutSection";
-import { Trophy } from "lucide-react";
+import { Trophy, Briefcase } from "lucide-react";
 
 const AchievementsSection = () => (
   <section id="achievements" className="container mx-auto max-w-5xl px-4 mt-16">
+    {/* Experience */}
+    {portfolioData.experience && portfolioData.experience.length > 0 && (
+      <div className="glass-card rounded-2xl p-6 sm:p-8 mb-8">
+        <SectionHeader eyebrow="Career" title="Experience" />
+        <div className="grid sm:grid-cols-2 gap-4 mt-6">
+          {portfolioData.experience.map((exp) => (
+            <div
+              key={exp.title}
+              className="rounded-xl bg-secondary/50 p-5 hover:bg-secondary transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
+            >
+              <div className="absolute top-0 left-0 right-0 h-1" style={{ background: "var(--gradient-primary)" }} />
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 bg-primary/20">
+                  <Briefcase className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <span className="text-xs font-extrabold text-primary">{exp.period}</span>
+                  <h3 className="font-display text-sm font-bold mt-0.5">{exp.title}</h3>
+                  <p className="text-xs font-semibold text-accent mt-0.5">{exp.org}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{exp.details}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
     {/* Hackathons & Achievements */}
     <div className="glass-card rounded-2xl p-6 sm:p-8">
       <SectionHeader eyebrow="Milestones" title="Achievements & Hackathons" />
@@ -22,6 +50,11 @@ const AchievementsSection = () => (
                 <span className="text-xs font-extrabold text-primary">{a.date}</span>
                 <h3 className="font-display text-sm font-bold mt-0.5">{a.title}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{a.details}</p>
+                {(a as any).link && (
+                  <a href={(a as any).link} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-xs font-bold text-accent hover-blink">
+                    {(a as any).linkText || "Visit"} &rarr;
+                  </a>
+                )}
               </div>
             </div>
           </div>
