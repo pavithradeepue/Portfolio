@@ -25,7 +25,7 @@ const Footer = () => (
         )}
         {portfolioData.basics.discord && (
           <a href="https://discordapp.com/users/daenerys344" target="_blank" rel="noopener" className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-bold border border-border hover:bg-secondary transition-colors">
-            <DiscordIcon className="w-4 h-4" /> {portfolioData.basics.discord}
+            <DiscordIcon className="w-4 h-4" /> Discord
           </a>
         )}
         <a href={`mailto:${portfolioData.basics.contact}`} className="px-5 py-2 rounded-full text-sm font-bold text-primary-foreground transition-colors" style={{ background: "var(--gradient-primary)" }}>

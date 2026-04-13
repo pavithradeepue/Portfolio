@@ -68,9 +68,8 @@ const HeroSection = () => {
             </a>
           )}
           {basics.discord && (
-            <a href="https://discordapp.com/users/daenerys344" target="_blank" rel="noopener" className="w-auto px-4 h-10 rounded-full glass-card flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://discordapp.com/users/daenerys344" target="_blank" rel="noopener" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary transition-colors hover-blink" title={`Discord: ${basics.discord}`}>
               <DiscordIcon className="w-4 h-4" />
-              <span className="text-sm font-bold">{basics.discord}</span>
             </a>
           )}
           <a href={`mailto:${basics.contact}`} className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary transition-colors">
