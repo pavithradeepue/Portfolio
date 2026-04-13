@@ -11,6 +11,8 @@ export const portfolioData = {
     phone: "+91-9995235912",
     linkedin: "https://linkedin.com/in/pavithra-deepu-e",
     github: "https://github.com/pavithradeepue",
+    facebook: "https://www.facebook.com/share/1Av2uiAEiw/",
+    discord: "daenerys344",
   },
   stats: [
     { value: "6+", label: "Projects & Prototypes" },
